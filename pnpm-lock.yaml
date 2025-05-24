@@ -425,8 +425,8 @@ importers:
         specifier: ^6.11.0
         version: 6.21.0(eslint@8.57.1)(typescript@5.8.3)
       bun-types:
-        specifier: 1.2.12
-        version: 1.2.12
+        specifier: 1.2.14
+        version: 1.2.14
       eslint:
         specifier: ^8.54.0
         version: 8.57.1
@@ -4911,8 +4911,8 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
     dev: true
 
-  /bun-types@1.2.12:
-    resolution: {integrity: sha512-tvWMx5vPqbRXgE8WUZI94iS1xAYs8bkqESR9cxBB1Wi+urvfTrF1uzuDgBHFAdO0+d2lmsbG3HmeKMvUyj6pWA==}
+  /bun-types@1.2.14:
+    resolution: {integrity: sha512-Kuh4Ub28ucMRWeiUUWMHsT9Wcbr4H3kLIO72RZZElSDxSu7vpetRvxIUDUaW6QtaIeixIpm7OXtNnZPf82EzwA==}
     dependencies:
       '@types/node': 20.17.50
     dev: true
