@@ -1,4 +1,4 @@
-export function instantiate(getCoreModule, imports, instantiateCore = WebAssembly.instantiate) {
+function instantiate(getCoreModule, imports, instantiateCore = WebAssembly.instantiate) {
   
   let dv = new DataView(new ArrayBuffer());
   const dataView = mem => dv.buffer === mem.buffer ? dv : dv = new DataView(mem.buffer);
@@ -154,7 +154,6 @@ export function instantiate(getCoreModule, imports, instantiateCore = WebAssembl
         dataView(memory0).setInt32(arg5 + 4, ptr3, true);
       }
     }
-    let exports2;
     let postReturn0;
     Promise.all([module0, module1, module2]).catch(() => {});
     ({ exports: exports0 } = yield instantiateCore(yield module1));
@@ -166,7 +165,7 @@ export function instantiate(getCoreModule, imports, instantiateCore = WebAssembl
     }));
     memory0 = exports1.memory;
     realloc0 = exports1.cabi_realloc;
-    ({ exports: exports2 } = yield instantiateCore(yield module2, {
+    (yield instantiateCore(yield module2, {
       '': {
         $imports: exports0.$imports,
         '0': trampoline0,
@@ -330,3 +329,5 @@ export function instantiate(getCoreModule, imports, instantiateCore = WebAssembl
   const maybeSyncReturn = runNext(null);
   return promise || maybeSyncReturn;
 }
+
+export { instantiate };
