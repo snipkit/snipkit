@@ -1,0 +1,64 @@
+{
+  "name": "@nosecone/sveltekit",
+  "version": "1.0.0-beta.7",
+  "description": "Protect your SvelteKit application with secure headers",
+  "license": "Apache-2.0",
+  "homepage": "https://snipkit.khulnasoft.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snipkit/snipkit.git",
+    "directory": "nosecone-sveltekit"
+  },
+  "bugs": {
+    "url": "https://github.com/snipkit/snipkit/issues",
+    "email": "support@khulnasoft.com"
+  },
+  "author": {
+    "name": "Snipkit",
+    "email": "support@khulnasoft.com",
+    "url": "https://snipkit.khulnasoft.com"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "*.js",
+    "*.d.ts",
+    "!*.config.js"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "rollup --config rollup.config.js",
+    "lint": "eslint .",
+    "pretest": "npm run build",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "nosecone": "1.0.0-beta.7"
+  },
+  "peerDependencies": {
+    "@sveltejs/kit": ">=2"
+  },
+  "devDependencies": {
+    "@snipkit/eslint-config": "1.0.0-beta.7",
+    "@snipkit/rollup-config": "1.0.0-beta.7",
+    "@snipkit/tsconfig": "1.0.0-beta.7",
+    "@rollup/wasm-node": "4.40.1",
+    "@sveltejs/kit": "2.20.8",
+    "@sveltejs/vite-plugin-svelte": "5.0.3",
+    "@types/node": "18.18.0",
+    "eslint": "9.26.0",
+    "svelte": "5.28.2",
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  }
+}

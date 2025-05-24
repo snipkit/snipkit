@@ -1,0 +1,50 @@
+{
+  "name": "@snipkit/eslint-config",
+  "version": "1.0.0-beta.7",
+  "description": "Custom eslint config for Snipkit projects",
+  "license": "Apache-2.0",
+  "homepage": "https://snipkit.khulnasoft.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snipkit/snipkit.git",
+    "directory": "tooling/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/snipkit/snipkit/issues",
+    "email": "support@khulnasoft.com"
+  },
+  "author": {
+    "name": "Snipkit",
+    "email": "support@khulnasoft.com",
+    "url": "https://snipkit.khulnasoft.com"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "main": "./eslint.config.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "eslint.config.js"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@eslint/js": "9.26.0",
+    "eslint-config-prettier": "10.1.2",
+    "eslint-config-turbo": "2.5.2",
+    "typescript-eslint": "8.32.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9"
+  },
+  "devDependencies": {
+    "eslint": "9.26.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  }
+}

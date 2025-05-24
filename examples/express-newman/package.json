@@ -1,0 +1,21 @@
+{
+  "name": "express-newman",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file .env.local ./index.js",
+    "test": "node --test --env-file .env.local"
+  },
+  "dependencies": {
+    "@snipkit/node": "file:../../snipkit-node",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "newman": "^6.2.1",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "jose": "5.6.3"
+  }
+}

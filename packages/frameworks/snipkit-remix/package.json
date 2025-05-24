@@ -1,0 +1,77 @@
+{
+  "name": "@snipkit/remix",
+  "version": "1.0.0-beta.7",
+  "description": "Snipkit SDK for Remix",
+  "license": "Apache-2.0",
+  "homepage": "https://snipkit.khulnasoft.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snipkit/snipkit.git",
+    "directory": "snipkit-remix"
+  },
+  "bugs": {
+    "url": "https://github.com/snipkit/snipkit/issues",
+    "email": "support@khulnasoft.com"
+  },
+  "author": {
+    "name": "Snipkit",
+    "email": "support@khulnasoft.com",
+    "url": "https://snipkit.khulnasoft.com"
+  },
+  "engines": {},
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "*.js",
+    "*.d.ts",
+    "!*.config.js"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup -c -w",
+    "test": "node --test --experimental-test-coverage",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "@snipkit/env": "1.0.0-beta.7",
+    "@snipkit/headers": "1.0.0-beta.7",
+    "@snipkit/ip": "1.0.0-beta.7",
+    "@snipkit/logger": "1.0.0-beta.7",
+    "@snipkit/protocol": "1.0.0-beta.7",
+    "@snipkit/transport": "1.0.0-beta.7",
+    "snipkit": "1.0.0-beta.7"
+  },
+  "devDependencies": {
+    "@snipkit/eslint-config": "1.0.0-beta.7",
+    "@snipkit/rollup-config": "1.0.0-beta.7",
+    "@snipkit/tsconfig": "1.0.0-beta.7",
+    "@rollup/wasm-node": "4.40.1",
+    "eslint": "^8.54.0",
+    "expect": "29.7.0",
+    "typescript": "^5.2.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.4",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "rollup": "^3.29.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^29.1.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  }
+}

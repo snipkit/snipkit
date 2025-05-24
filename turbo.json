@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "NODE_ENV",
+    "NEXT_RUNTIME",
+    "VERCEL",
+    "VERCEL_GIT_COMMIT_SHA",
+    "SNIPKIT_ENV",
+    "SNIPKIT_KEY",
+    "SNIPKIT_BASE_URL",
+    "SNIPKIT_RUNTIME",
+    "SNIPKIT_LOG_LEVEL",
+    "OPENAI_API_KEY",
+    "FLY_APP_NAME",
+    "RENDER",
+    "MODE"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "outputLogs": "none"
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": false,
+      "outputLogs": "none"
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "cache": false,
+      "outputLogs": "none"
+    }
+  }
+}

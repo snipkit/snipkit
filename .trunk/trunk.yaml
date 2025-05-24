@@ -1,0 +1,84 @@
+# This file controls the behavior of Trunk: https://docs.trunk.io/cli
+# To learn more about the format of this file, see https://docs.trunk.io/reference/trunk-yaml
+version: 0.1
+cli:
+  version: 1.22.10
+# Trunk provides extensibility via plugins. (https://docs.trunk.io/plugins)
+plugins:
+  sources:
+    - id: trunk
+      ref: v1.6.7
+      uri: https://github.com/trunk-io/plugins
+# Many linters and tools depend on runtimes - configure them here. (https://docs.trunk.io/runtimes)
+runtimes:
+  enabled:
+    - go@1.21.0
+    - node@18.20.5
+    - python@3.10.8
+# This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
+lint:
+  enabled:
+    - shellcheck@0.10.0
+    - shfmt@3.6.0
+    - trivy@0.59.1
+    - yamllint@1.35.1
+    - semgrep@1.107.0
+    - gitleaks@8.23.3
+    - actionlint@1.7.7
+    - git-diff-check
+    - markdownlint@0.44.0
+    - osv-scanner@1.9.2
+    - prettier@3.4.2
+    - svgo@3.3.2
+    - trufflehog@3.88.4
+  disabled:
+    # tfsec and checkov are replaced by Trivy
+    - tfsec
+    - checkov
+  ignore:
+    - linters: [ALL]
+      paths:
+        - analyze-wasm/wasm/**
+        - redact-wasm/wasm/**
+        - protocol/proto/**
+        - "**/LICENSE"
+        - "**/CHANGELOG.md"
+        - .github/CODEOWNERS
+        - .github/.release-please-manifest.json
+        - examples/**
+  threshold:
+    - linters: [markdownlint]
+      level: medium
+actions:
+  enabled:
+    - trunk-fmt-pre-commit
+    - trunk-check-pre-push
+    - trunk-announce
+    - trunk-upgrade-available
+merge:
+  required_statuses:
+    - Trunk Check
+    - "Run tests / Run tests (OS: ubuntu-latest, Node: 18)"
+    - "Run tests / Run tests (OS: ubuntu-latest, Node: 20)"
+    - Build examples / Gatsby + Rate Limit
+    - Build examples / NestJS
+    - Build examples / NestJS + Fastify
+    - Build examples / NestJS + GraphQL
+    - Build examples / NestJS + LaunchDarkly
+    - Build examples / Next.js 14 + NextAuth 4
+    - Build examples / Next.js + App Router + Rate Limit
+    - Build examples / Next.js + App Router + Validate Email
+    - Build examples / Next.js + Auth.js 5
+    - Build examples / Next.js + Bot categories
+    - Build examples / Next.js + Clerk + Rate Limit
+    - Build examples / Next.js + Clerk + Shield
+    - Build examples / Next.js + Decorate
+    - Build examples / Next.js + IP Details
+    - Build examples / Next.js + OpenAI
+    - Build examples / Next.js + Page Router + withSnipkit
+    - Build examples / Next.js + Permit
+    - Build examples / Next.js + Sensitive Info
+    - Build examples / Next.js + Server Actions
+    - Build examples / Node.js + Hono + Rate Limit
+    - Build examples / Remix + Express
+    - Build examples / SvelteKit

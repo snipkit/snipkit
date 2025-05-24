@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "versioning": "prerelease",
+  "release-type": "node",
+  "changelog-path": "CHANGELOG.md",
+  "changelog-sections": [
+    { "type": "feat", "section": "🚀 New Features" },
+    { "type": "fix", "section": "🪲 Bug Fixes" },
+    { "type": "perf", "section": "🏎️ Performance Improvements" },
+    { "type": "revert", "section": "↩️ Reverts" },
+    { "type": "docs", "section": "📝 Documentation" },
+    { "type": "chore", "section": "🧹 Miscellaneous Chores" },
+    { "type": "refactor", "section": "⌨️ Code Refactoring" },
+    { "type": "test", "section": "📚 Tests" },
+    { "type": "build", "section": "🔨 Build System" },
+    { "type": "ci", "section": "✅ Continuous Integration" }
+  ],
+  "group-pull-request-title-pattern": "chore: Release ${version}",
+  "pull-request-header": "Automatically generated with [Release Please](https://github.com/googleapis/release-please).",
+  "pull-request-footer": "",
+  "include-v-in-tag": true,
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
+  "draft": false,
+  "prerelease": false,
+  "packages": {
+    ".": {
+      "component": "root",
+      "include-component-in-tag": false
+    },
+    "analyze": {
+      "component": "@snipkit/analyze",
+      "skip-github-release": true
+    },
+    "analyze-wasm": {
+      "component": "@snipkit/analyze-wasm",
+      "skip-github-release": true
+    },
+    "snipkit": {
+      "component": "snipkit",
+      "skip-github-release": true
+    },
+    "snipkit-astro": {
+      "component": "@snipkit/astro",
+      "skip-github-release": true
+    },
+    "snipkit-bun": {
+      "component": "@snipkit/bun",
+      "skip-github-release": true
+    },
+    "snipkit-deno": {
+      "component": "@snipkit/deno",
+      "skip-github-release": true
+    },
+    "snipkit-nest": {
+      "component": "@snipkit/nest",
+      "skip-github-release": true
+    },
+    "snipkit-next": {
+      "component": "@snipkit/next",
+      "skip-github-release": true
+    },
+    "snipkit-node": {
+      "component": "@snipkit/node",
+      "skip-github-release": true
+    },
+    "snipkit-remix": {
+      "component": "@snipkit/remix",
+      "skip-github-release": true
+    },
+    "snipkit-sveltekit": {
+      "component": "@snipkit/sveltekit",
+      "skip-github-release": true
+    },
+    "body": {
+      "component": "@snipkit/body",
+      "skip-github-release": true
+    },
+    "decorate": {
+      "component": "@snipkit/decorate",
+      "skip-github-release": true
+    },
+    "duration": {
+      "component": "@snipkit/duration",
+      "skip-github-release": true
+    },
+    "env": {
+      "component": "@snipkit/env",
+      "skip-github-release": true
+    },
+    "eslint-config": {
+      "component": "@snipkit/eslint-config",
+      "skip-github-release": true
+    },
+    "headers": {
+      "component": "@snipkit/headers",
+      "skip-github-release": true
+    },
+    "inspect": {
+      "component": "@snipkit/inspect",
+      "skip-github-release": true
+    },
+    "ip": {
+      "component": "@snipkit/ip",
+      "skip-github-release": true
+    },
+    "logger": {
+      "component": "@snipkit/logger",
+      "skip-github-release": true
+    },
+    "nosecone": {
+      "component": "nosecone",
+      "skip-github-release": true
+    },
+    "nosecone-next": {
+      "component": "@nosecone/next",
+      "skip-github-release": true
+    },
+    "nosecone-sveltekit": {
+      "component": "@nosecone/sveltekit",
+      "skip-github-release": true
+    },
+    "protocol": {
+      "component": "@snipkit/protocol",
+      "skip-github-release": true
+    },
+    "redact": {
+      "component": "@snipkit/redact",
+      "skip-github-release": true
+    },
+    "redact-wasm": {
+      "component": "@snipkit/redact-wasm",
+      "skip-github-release": true
+    },
+    "rollup-config": {
+      "component": "@snipkit/rollup-config",
+      "skip-github-release": true
+    },
+    "runtime": {
+      "component": "@snipkit/runtime",
+      "skip-github-release": true
+    },
+    "sprintf": {
+      "component": "@snipkit/sprintf",
+      "skip-github-release": true
+    },
+    "stable-hash": {
+      "component": "@snipkit/stable-hash",
+      "skip-github-release": true
+    },
+    "transport": {
+      "component": "@snipkit/transport",
+      "skip-github-release": true
+    },
+    "tsconfig": {
+      "component": "@snipkit/tsconfig",
+      "skip-github-release": true
+    }
+  },
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "groupName": "snipkit-js",
+      "components": [
+        "root",
+        "@snipkit/analyze",
+        "@snipkit/analyze-wasm",
+        "snipkit",
+        "@snipkit/astro",
+        "@snipkit/bun",
+        "@snipkit/deno",
+        "@snipkit/nest",
+        "@snipkit/next",
+        "@snipkit/node",
+        "@snipkit/remix",
+        "@snipkit/sveltekit",
+        "@snipkit/decorate",
+        "@snipkit/duration",
+        "@snipkit/env",
+        "@snipkit/eslint-config",
+        "@snipkit/headers",
+        "@snipkit/inspect",
+        "@snipkit/ip",
+        "@snipkit/body",
+        "@snipkit/logger",
+        "nosecone",
+        "@nosecone/next",
+        "@nosecone/sveltekit",
+        "@snipkit/protocol",
+        "@snipkit/redact",
+        "@snipkit/redact-wasm",
+        "@snipkit/rollup-config",
+        "@snipkit/runtime",
+        "@snipkit/sprintf",
+        "@snipkit/stable-hash",
+        "@snipkit/transport",
+        "@snipkit/tsconfig"
+      ]
+    }
+  ]
+}

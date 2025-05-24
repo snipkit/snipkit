@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "npm:@snipkit/deno": ["../../snipkit-deno/index"],
+      "snipkit": ["../../snipkit/index"]
+    }
+  }
+}

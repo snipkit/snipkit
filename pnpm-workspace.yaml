@@ -1,0 +1,9 @@
+packages:
+  - 'analyze'
+  - 'rollup-config'
+  - 'sprintf'
+  - 'tooling/*'
+  - 'packages/core/*'
+  - 'packages/frameworks/*'
+  - 'packages/utils/*'
+  - 'packages/wasm/*'

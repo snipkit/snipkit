@@ -1,0 +1,47 @@
+name: Push
+
+on:
+  push:
+    # Only ever run `push` events against protected branches, likely just `main`
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Run tests
+    uses: ./.github/workflows/reusable-test.yml
+    permissions:
+      contents: read
+
+  examples:
+    name: Build examples
+    uses: ./.github/workflows/reusable-examples.yml
+    permissions:
+      contents: read
+
+  release:
+    runs-on: ubuntu-latest
+    # Release Please is very fast, so we set a tiny timeout
+    timeout-minutes: 1
+    # Release Please creates a Pull Request with changes to files
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      # Environment security
+      - name: Harden Runner
+        uses: step-security/harden-runner@0634a2670c59f64b4a01f0f96f84700a4088b9f0 # v2.12.0
+        with:
+          disable-sudo-and-containers: true
+          egress-policy: audit
+
+      - name: Release Please
+        uses: googleapis/release-please-action@a02a34c4d625f9be7cb89156071d8567266a2445 # v4.2.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: .github/release-please-config.json
+          manifest-file: .github/.release-please-manifest.json

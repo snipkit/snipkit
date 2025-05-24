@@ -1,0 +1,4 @@
+{
+  "extends": "@snipkit/tsconfig/base",
+  "include": ["index.ts", "env.d.ts"]
+}

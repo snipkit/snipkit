@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-read --allow-env --allow-net --watch server.ts",
+    "start": "deno run --allow-read --allow-env --allow-net server.ts"
+  },
+  "imports": {
+    "@snipkit/analyze": "../../analyze/index.js",
+    "npm:@snipkit/deno": "../../snipkit-deno/index.js",
+    "@snipkit/duration": "../../duration/index.js",
+    "@snipkit/env": "../../env/index.js",
+    "@snipkit/headers": "../../headers/index.js",
+    "@snipkit/ip": "../../ip/index.js",
+    "@snipkit/logger": "../../logger/index.js",
+    "@snipkit/protocol": "../../protocol/index.js",
+    "@snipkit/protocol/client.js": "../../protocol/client.js",
+    "@snipkit/protocol/convert.js": "../../protocol/convert.js",
+    "@snipkit/runtime": "../../runtime/index.js",
+    "@snipkit/sprintf": "../../sprintf/index.js",
+    "@snipkit/transport": "../../transport/index.js",
+    "@bufbuild/protobuf": "npm:@bufbuild/protobuf@1.10.0",
+    "@connectrpc/connect": "npm:@connectrpc/connect@1.5.0",
+    "@connectrpc/connect-node": "npm:@connectrpc/connect-node@1.5.0",
+    "snipkit": "../../snipkit/index.js",
+    "typeid-js": "npm:typeid-js@1.1.0"
+  }
+}

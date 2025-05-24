@@ -1,0 +1,58 @@
+{
+  "name": "@snipkit/rollup-config",
+  "version": "1.0.0-beta.7",
+  "description": "Custom rollup config for Snipkit projects",
+  "license": "Apache-2.0",
+  "homepage": "https://snipkit.khulnasoft.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snipkit/snipkit.git",
+    "directory": "tooling/rollup-config"
+  },
+  "bugs": {
+    "url": "https://github.com/snipkit/snipkit/issues",
+    "email": "support@khulnasoft.com"
+  },
+  "author": {
+    "name": "Snipkit",
+    "email": "support@khulnasoft.com",
+    "url": "https://snipkit.khulnasoft.com"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "*.js",
+    "*.d.ts",
+    "!*.config.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test --experimental-test-coverage"
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "6.0.2",
+    "@rollup/plugin-typescript": "12.1.2"
+  },
+  "peerDependencies": {
+    "@rollup/wasm-node": "^4"
+  },
+  "devDependencies": {
+    "@snipkit/eslint-config": "1.0.0-beta.7",
+    "@snipkit/tsconfig": "1.0.0-beta.7",
+    "@types/node": "18.18.0",
+    "@rollup/wasm-node": "4.40.1",
+    "eslint": "9.26.0",
+    "expect": "29.7.0",
+    "typescript": "5.8.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  }
+}

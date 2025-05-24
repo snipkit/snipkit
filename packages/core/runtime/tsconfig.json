@@ -1,0 +1,4 @@
+{
+  "extends": "@snipkit/tsconfig/base",
+  "include": ["edge-light.ts", "index.ts", "test/*.ts"]
+}

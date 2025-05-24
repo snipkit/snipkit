@@ -1,0 +1,4 @@
+{
+  "extends": "@snipkit/tsconfig/base",
+  "include": ["index.ts", "internal.ts", "middleware.ts", "astro-env.d.ts"]
+}

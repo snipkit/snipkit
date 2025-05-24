@@ -1,0 +1,32 @@
+{
+  "name": "bun-rate-limit",
+  "private": true,
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "../../analyze",
+    "../../snipkit",
+    "../../snipkit-bun",
+    "../../duration",
+    "../../env",
+    "../../eslint-config",
+    "../../headers",
+    "../../ip",
+    "../../logger",
+    "../../protocol",
+    "../../rollup-config",
+    "../../runtime",
+    "../../sprintf",
+    "../../transport",
+    "../../tsconfig"
+  ],
+  "dependencies": {
+    "@snipkit/bun": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "1.1.3"
+  },
+  "peerDependencies": {
+    "typescript": "5.4.5"
+  }
+}
