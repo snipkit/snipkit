@@ -34,7 +34,7 @@ export async function initializeWasm(
   replace: CustomRedact,
 ) {
   const coreImports: ImportObject = {
-    'snipkit:redact/custom-redact': {
+    'arcjet:redact/custom-redact': {
       detectSensitiveInfo: detect,
       redactSensitiveInfo: replace,
     },

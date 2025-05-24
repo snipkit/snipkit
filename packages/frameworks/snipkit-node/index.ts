@@ -9,14 +9,14 @@ import type {
   Snipkit,
   CharacteristicProps,
 } from "snipkit";
-import findIP, { parseProxy } from "@snipkit/utils/ip";
-import SnipkitHeaders from "@snipkit/utils/headers";
-import type { Env } from "@snipkit/utils/env";
-import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/utils/env";
-import { Logger } from "@snipkit/utils/logger";
-import { createClient } from "@snipkit/protocol/client.js";
-import { createTransport } from "@snipkit/utils/transport";
-import { readBody } from "@snipkit/utils/body";
+import findIP, { parseProxy } from "@snipkit/ip";
+import SnipkitHeaders from "@snipkit/headers";
+import type { Env } from "@snipkit/env";
+import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/env";
+import { Logger } from "@snipkit/logger";
+import { createClient } from "@snipkit/protocol";
+import { createTransport } from "@snipkit/transport";
+import { readBody } from "@snipkit/body";
 
 // Re-export all named exports from the generic SDK
 export * from "snipkit";

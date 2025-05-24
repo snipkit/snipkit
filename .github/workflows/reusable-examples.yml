@@ -41,16 +41,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/gatsby-rate-limit
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/gatsby-rate-limit
-        run: npm run build
+        run: pnpm build
 
   nestjs:
     name: NestJS
@@ -81,16 +87,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nestjs
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nestjs
-        run: npm run build
+        run: pnpm build
 
   nestjs-fastify:
     name: NestJS + Fastify
@@ -121,16 +133,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nestjs-fastify
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nestjs-fastify
-        run: npm run build
+        run: pnpm build
 
   nestjs-graphql:
     name: NestJS + GraphQL
@@ -161,16 +179,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nestjs-graphql
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nestjs-graphql
-        run: npm run build
+        run: pnpm build
 
   nestjs-launchdarkly:
     name: NestJS + LaunchDarkly
@@ -201,16 +225,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nestjs-launchdarkly
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nestjs-launchdarkly
-        run: npm run build
+        run: pnpm build
 
   nextjs-14-nextauth-4:
     name: Next.js 14 + NextAuth 4
@@ -244,16 +274,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-14-nextauth-4
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-14-nextauth-4
-        run: npm run build
+        run: pnpm build
 
   nextjs-app-dir-rate-limit:
     name: Next.js + App Router + Rate Limit
@@ -287,16 +323,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-app-dir-rate-limit
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-app-dir-rate-limit
-        run: npm run build
+        run: pnpm build
 
   nextjs-app-dir-validate-email:
     name: Next.js + App Router + Validate Email
@@ -330,16 +372,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-app-dir-validate-email
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-app-dir-validate-email
-        run: npm run build
+        run: pnpm build
 
   nextjs-authjs-5:
     name: Next.js + Auth.js 5
@@ -373,18 +421,24 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-authjs-5
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-authjs-5
         env:
           AUTH_SECRET: TEST_SECRET
-        run: npm run build
+        run: pnpm build
 
   nextjs-authjs-nosecone:
     name: Next.js + Auth.js 5 + Nosecone
@@ -418,18 +472,24 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-authjs-nosecone
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-authjs-nosecone
         env:
           AUTH_SECRET: TEST_SECRET
-        run: npm run build
+        run: pnpm build
 
   nextjs-better-auth:
     name: Next.js + Better-Auth
@@ -466,18 +526,24 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-better-auth
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-better-auth
         env:
           BETTER_AUTH_SECRET: TEST_SECRET
-        run: npm run build
+        run: pnpm build
 
   nextjs-bot-categories:
     name: Next.js + Bot categories
@@ -511,16 +577,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-bot-categories
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-bot-categories
-        run: npm run build
+        run: pnpm build
 
   nextjs-clerk-rate-limit:
     name: Next.js + Clerk + Rate Limit
@@ -554,16 +626,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-clerk-rate-limit
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-clerk-rate-limit
-        run: npm run build
+        run: pnpm build
         env:
           # This is the smallest dummy token that passes the Clerk validation
           NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_JA==
@@ -600,16 +678,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-clerk-shield
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-clerk-shield
-        run: npm run build
+        run: pnpm build
         env:
           # This is the smallest dummy token that passes the Clerk validation
           NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_JA==
@@ -646,16 +730,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-decorate
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-decorate
-        run: npm run build
+        run: pnpm build
 
   nextjs-ip-details:
     name: Next.js + IP Details
@@ -689,16 +779,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-ip-details
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-ip-details
-        run: npm run build
+        run: pnpm build
 
   nextjs-openai:
     name: Next.js + OpenAI
@@ -732,16 +828,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-openai
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-openai
-        run: npm run build
+        run: pnpm build
 
   nextjs-pages-wrap:
     name: Next.js + Page Router + withSnipkit
@@ -818,16 +920,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-permit
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-permit
-        run: npm run build
+        run: pnpm build
         env:
           # This is the smallest dummy token that passes the Clerk validation
           NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_JA==
@@ -864,16 +972,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-sensitive-info
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-sensitive-info
-        run: npm run build
+        run: pnpm build
 
   nextjs-server-actions:
     name: Next.js + Server Actions
@@ -907,16 +1021,22 @@ jobs:
 
       # Workflow
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Install example dependencies
         working-directory: examples/nextjs-server-actions
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         working-directory: examples/nextjs-server-actions
-        run: npm run build
+        run: pnpm build
 
   nodejs-hono-rate-limit:
     name: Node.js + Hono + Rate Limit

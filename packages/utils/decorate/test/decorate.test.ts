@@ -6,7 +6,7 @@ import {
   SnipkitRateLimitReason,
   SnipkitReason,
   SnipkitRuleResult,
-} from "@snipkit/core/protocol";
+} from "@snipkit/protocol";
 import { OutgoingMessage } from "http";
 
 function noop() {}

@@ -9,12 +9,12 @@ import type {
   Snipkit,
   CharacteristicProps,
 } from "snipkit";
-import findIP, { parseProxy } from "@snipkit/utils/ip";
-import SnipkitHeaders from "@snipkit/utils/headers";
-import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/utils/env";
-import { Logger } from "@snipkit/utils/logger";
-import { createClient } from "@snipkit/protocol/client.js";
-import { createTransport } from "@snipkit/utils/transport";
+import findIP, { parseProxy } from "@snipkit/ip";
+import SnipkitHeaders from "@snipkit/headers";
+import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/env";
+import { Logger } from "@snipkit/logger";
+import { createClient } from "@snipkit/protocol";
+import { createTransport } from "@snipkit/transport";
 
 import {
   SNIPKIT_BASE_URL,

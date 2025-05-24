@@ -1,10 +1,10 @@
 import format from "@snipkit/sprintf";
-import type { SnipkitDecision } from "@snipkit/core/protocol";
+import type { SnipkitDecision } from "@snipkit/protocol";
 import {
   SnipkitRateLimitReason,
   SnipkitReason,
   SnipkitRuleResult,
-} from "@snipkit/core/protocol";
+} from "@snipkit/protocol";
 
 interface HeaderLike {
   has(name: string): boolean;

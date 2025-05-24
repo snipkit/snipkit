@@ -59,10 +59,10 @@ function createCoreImports(detect?: DetectSensitiveInfoFunction): ImportObject {
   }
 
   return {
-    "snipkit:js-req/bot-identifier": {
+    "arcjet:js-req/bot-identifier": {
       detect: noOpBotsDetect,
     },
-    "snipkit:js-req/email-validator-overrides": {
+    "arcjet:js-req/email-validator-overrides": {
       isFreeEmail(domain) {
         if (FREE_EMAIL_PROVIDERS.includes(domain)) {
           return "yes";
@@ -79,10 +79,10 @@ function createCoreImports(detect?: DetectSensitiveInfoFunction): ImportObject {
         return "unknown";
       },
     },
-    "snipkit:js-req/sensitive-information-identifier": {
+    "arcjet:js-req/sensitive-information-identifier": {
       detect: detect,
     },
-    "snipkit:js-req/verify-bot": {
+    "arcjet:js-req/verify-bot": {
       verify() {
         return "unverifiable";
       },

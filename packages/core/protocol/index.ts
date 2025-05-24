@@ -1,11 +1,14 @@
 import { typeid } from "typeid-js";
 import { Reason } from "./proto/decide/v1alpha1/decide_pb.js";
+import { createClient } from "./client.js";
 
 // Re-export the Well Known Bots from the generated file
 export type * from "./well-known-bots.js";
 
 // Re-export the Bot categories from the generated file
 export { categories as botCategories } from "./well-known-bots.js";
+
+export { createClient } from "./client.js";
 
 type RequiredProps<T, K extends keyof T> = Required<Pick<T, K>> & Omit<T, K>;
 

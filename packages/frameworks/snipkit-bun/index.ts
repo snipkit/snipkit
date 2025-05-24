@@ -10,14 +10,14 @@ import type {
   Snipkit,
   CharacteristicProps,
 } from "snipkit";
-import findIP, { parseProxy } from "@snipkit/utils/ip";
-import SnipkitHeaders from "@snipkit/utils/headers";
+import findIP, { parseProxy } from "@snipkit/ip";
+import SnipkitHeaders from "@snipkit/headers";
 import type { Server } from "bun";
 import { env } from "bun";
-import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/utils/env";
-import { Logger } from "@snipkit/utils/logger";
-import { createClient } from "@snipkit/protocol/client.js";
-import { createTransport } from "@snipkit/utils/transport";
+import { baseUrl, isDevelopment, logLevel, platform } from "@snipkit/env";
+import { Logger } from "@snipkit/logger";
+import { createClient } from "@snipkit/protocol";
+import { createTransport } from "@snipkit/transport";
 
 // Re-export all named exports from the generic SDK
 export * from "snipkit";

@@ -77,7 +77,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run lint --workspaces --if-present
+        run: pnpm lint --recursive
 
   test:
     name: Test (${{ matrix.node-version }}, ${{ matrix.os }})
@@ -112,7 +112,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test --workspaces --if-present
+        run: pnpm test --recursive
 
   build:
     name: Build
@@ -142,7 +142,7 @@ jobs:
         run: npm ci
 
       - name: Build packages
-        run: npm run build --workspaces --if-present
+        run: pnpm build --recursive
 
   integration:
     name: Integration Tests

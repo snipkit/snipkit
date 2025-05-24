@@ -11,7 +11,7 @@ const stat = promisify(fs.stat);
 const PACKAGE_MAPPING = {
   // Core packages
   '@snipkit/snipkit': '@snipkit/core/snipkit',
-  '@snipkit/protocol': '@snipkit/core/protocol',
+  '@snipkit/protocol': '@snipkit/protocol',
   '@snipkit/runtime': '@snipkit/core/runtime',
   
   // Framework packages
@@ -39,7 +39,7 @@ const PACKAGE_MAPPING = {
   
   // WASM packages
   '@snipkit/analyze-wasm': '@snipkit/wasm/analyze-wasm',
-  '@snipkit/redact-wasm': '@snipkit/wasm/redact-wasm',
+  '@snipkit/redact-wasm': '@snipkit/redact-wasm',
 };
 
 // File extensions to process

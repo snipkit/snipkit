@@ -17,7 +17,7 @@ import type {
   SnipkitEmailType,
   SnipkitSensitiveInfoType,
   SnipkitRateLimitRule,
-} from "@snipkit/core/protocol";
+} from "@snipkit/protocol";
 import {
   SnipkitBotReason,
   SnipkitEmailReason,
@@ -30,7 +30,7 @@ import {
   SnipkitErrorDecision,
   SnipkitShieldReason,
   SnipkitRateLimitReason,
-} from "@snipkit/core/protocol";
+} from "@snipkit/protocol";
 import type { Client } from "@snipkit/protocol/client.js";
 import * as analyze from "@snipkit/analyze";
 import type {
@@ -39,12 +39,12 @@ import type {
   BotConfig,
   EmailValidationConfig,
 } from "@snipkit/analyze";
-import * as duration from "@snipkit/utils/duration";
-import SnipkitHeaders from "@snipkit/utils/headers";
-import { runtime } from "@snipkit/core/runtime";
-import * as hasher from "@snipkit/utils/stable-hash";
+import * as duration from "@snipkit/duration";
+import SnipkitHeaders from "@snipkit/headers";
+import { runtime } from "@snipkit/runtime";
+import * as hasher from "@snipkit/stable-hash";
 
-export * from "@snipkit/core/protocol";
+export * from "@snipkit/protocol";
 
 function assert(condition: boolean, msg: string) {
   if (!condition) {
