@@ -25,8 +25,8 @@ importers:
         specifier: 1.5.0
         version: 1.5.0
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: workspace:*
         version: link:../tooling/eslint-config
@@ -71,8 +71,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -137,8 +137,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -222,8 +222,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -310,8 +310,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -401,8 +401,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -492,8 +492,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -589,8 +589,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -683,8 +683,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -780,8 +780,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -868,8 +868,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -956,8 +956,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1022,8 +1022,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1095,8 +1095,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1161,8 +1161,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1227,8 +1227,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1293,8 +1293,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1363,8 +1363,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1429,8 +1429,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1502,8 +1502,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1575,8 +1575,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1641,8 +1641,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1720,8 +1720,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1789,8 +1789,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1858,8 +1858,8 @@ importers:
         specifier: ^11.1.4
         version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.8.3)
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/eslint-config
@@ -1915,8 +1915,8 @@ importers:
   sprintf:
     devDependencies:
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../tooling/eslint-config
@@ -1968,8 +1968,8 @@ importers:
         version: 12.1.2(typescript@5.8.3)
     devDependencies:
       '@rollup/wasm-node':
-        specifier: 4.40.1
-        version: 4.40.1
+        specifier: 4.41.1
+        version: 4.41.1
       '@snipkit/eslint-config':
         specifier: 1.0.0-beta.7
         version: link:../eslint-config
@@ -3949,8 +3949,8 @@ packages:
     dev: true
     optional: true
 
-  /@rollup/wasm-node@4.40.1:
-    resolution: {integrity: sha512-3nXUKfAq1nD/vgQi7ncLNyn8jx1PAsN6njSS9baCpI9JHk92Y/JOWZib7HvLJ5BBZ4MC5NSeqkpUKnmceXyzXA==}
+  /@rollup/wasm-node@4.41.1:
+    resolution: {integrity: sha512-70qfem+U3hAgwNgOlnUQiIdfKHLELUxsEWbFWg3aErPUvsyXYF1HALJBwoDgMUhRWyn+SqWVneDTnO/Kbey9hg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
     dependencies:
