@@ -54,7 +54,7 @@
     "@types/node": "^20.5.7",
     "@rollup/wasm-node": "4.40.1",
     "bun-types": "1.2.12",
-    "eslint": "^8.54.0",
+    "eslint": "^9.27.0",
     "expect": "29.7.0",
     "typescript": "^5.2.2",
     "@rollup/plugin-commonjs": "^25.0.7",
