@@ -51,7 +51,7 @@
     "@snipkit/eslint-config": "1.0.0-beta.7",
     "@snipkit/rollup-config": "1.0.0-beta.7",
     "@snipkit/tsconfig": "1.0.0-beta.7",
-    "@types/deno": "2.0.0",
+    "@types/deno": "2.3.0",
     "@rollup/wasm-node": "4.40.1",
     "eslint": "^8.54.0",
     "expect": "29.7.0",

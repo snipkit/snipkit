@@ -504,8 +504,8 @@ importers:
         specifier: 1.0.0-beta.7
         version: link:../../../tooling/tsconfig
       '@types/deno':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.3.0
+        version: 2.3.0
       '@types/jest':
         specifier: ^29.5.5
         version: 29.5.14
@@ -4092,8 +4092,8 @@ packages:
       '@types/ms': 2.1.0
     dev: true
 
-  /@types/deno@2.0.0:
-    resolution: {integrity: sha512-O9/jRVlq93kqfkl4sYR5N7+Pz4ukzXVIbMnE/VgvpauNHsvjQ9iBVnJ3X0gAvMa2khcoFD8DSO7mQVCuiuDMPg==}
+  /@types/deno@2.3.0:
+    resolution: {integrity: sha512-/4SyefQpKjwNKGkq9qG3Ln7MazfbWKvydyVFBnXzP5OQA4u1paoFtaOe1iHKycIWHHkhYag0lPxyheThV1ijzw==}
     dev: true
 
   /@types/estree@1.0.7:
