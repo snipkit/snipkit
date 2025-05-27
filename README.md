@@ -1,10 +1,3 @@
-<a href="https://snipkit.khulnasoft.com" target="_snipkit-home">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://snipkit.khulnasoft.com/logo/snipkit-dark-lockup-voyage-horizontal.svg">
-    <img src="https://snipkit.khulnasoft.com/logo/snipkit-light-lockup-voyage-horizontal.svg" alt="Snipkit Logo" height="128" width="auto">
-  </picture>
-</a>
-
 # Snipkit - JS SDK
 
 <p>
