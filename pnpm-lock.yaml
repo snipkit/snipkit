@@ -577,8 +577,8 @@ importers:
         version: link:../../core/snipkit
     devDependencies:
       '@nestjs/common':
-        specifier: ^11.1.0
-        version: 11.1.1(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        specifier: ^11.1.2
+        version: 11.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@rollup/plugin-commonjs':
         specifier: ^25.0.7
         version: 25.0.8(rollup@3.29.5)
@@ -3567,8 +3567,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@nestjs/common@11.1.1(reflect-metadata@0.2.2)(rxjs@7.8.2):
-    resolution: {integrity: sha512-crzp+1qeZ5EGL0nFTPy9NrVMAaUWewV5AwtQyv6SQ9yQPXwRl9W9hm1pt0nAtUu5QbYMbSuo7lYcF81EjM+nCA==}
+  /@nestjs/common@11.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2):
+    resolution: {integrity: sha512-cHh4OPH44PjaHM93D1jgE1HO/B7XTZVRDxy/cPuGgyMEA4p2zXO+qqcOgTMC5FYcp7dX9jLeCjXAU0ToFAnODw==}
     peerDependencies:
       class-transformer: '>=0.4.1'
       class-validator: '>=0.13.2'
@@ -3580,7 +3580,7 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      file-type: 20.5.0
+      file-type: 21.0.0
       iterare: 1.2.1
       load-esm: 1.0.2
       reflect-metadata: 0.2.2
@@ -6064,9 +6064,9 @@ packages:
     dependencies:
       flat-cache: 4.0.1
 
-  /file-type@20.5.0:
-    resolution: {integrity: sha512-BfHZtG/l9iMm4Ecianu7P8HRD2tBHLtjXinm4X62XBOYzi7CYA7jyqfJzOvXHqzVrVPYqBo2/GvbARMaaJkKVg==}
-    engines: {node: '>=18'}
+  /file-type@21.0.0:
+    resolution: {integrity: sha512-ek5xNX2YBYlXhiUXui3D/BXa3LdqPmoLJ7rqEx2bKJ7EAUEfmXgW0Das7Dc6Nr9MvqaOnIqiPV0mZk/r/UpNAg==}
+    engines: {node: '>=20'}
     dependencies:
       '@tokenizer/inflate': 0.2.7
       strtok3: 10.2.2
