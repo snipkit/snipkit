@@ -27,7 +27,7 @@
     "update-imports": "node scripts/update-imports.js"
   },
   "devDependencies": {
-    "turbo": "^2.5.2"
+    "turbo": "^2.5.4"
   },
   "overrides": {
     "cookie": ">=0.7.2",
