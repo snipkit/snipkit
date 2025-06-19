@@ -62,7 +62,7 @@
     "@rollup/wasm-node": "4.40.1",
     "@types/node": "^20.5.7",
     "eslint": "^8.54.0",
-    "expect": "29.7.0",
+    "expect": "30.0.1",
     "reflect-metadata": "0.2.2",
     "rxjs": "7.8.2",
     "typescript": "^5.2.2",
