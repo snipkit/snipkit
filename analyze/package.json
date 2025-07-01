@@ -48,7 +48,7 @@
     "@snipkit/eslint-config": "workspace:*",
     "@snipkit/rollup-config": "workspace:*",
     "@snipkit/tsconfig": "workspace:*",
-    "@bytecodealliance/jco": "1.5.0",
+    "@bytecodealliance/jco": "1.11.3",
     "@rollup/wasm-node": "4.40.1",
     "@types/node": "18.18.0",
     "eslint": "9.26.0",
