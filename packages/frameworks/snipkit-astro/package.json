@@ -55,7 +55,7 @@
     "@snipkit/rollup-config": "1.0.0-beta.7",
     "@snipkit/tsconfig": "1.0.0-beta.7",
     "@rollup/wasm-node": "4.40.1",
-    "astro": "5.7.10",
+    "astro": "5.10.2",
     "eslint": "^8.54.0",
     "expect": "29.7.0",
     "typescript": "^5.2.2",
