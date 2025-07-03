@@ -47,7 +47,7 @@
     "@snipkit/tsconfig": "1.0.0-beta.7",
     "@rollup/wasm-node": "4.40.1",
     "eslint": "^8.54.0",
-    "expect": "29.7.0",
+    "expect": "30.0.4",
     "typescript": "^5.2.2",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
